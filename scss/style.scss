@@ -8,7 +8,7 @@
 
 @import 'mixins/mixin';
 // Fonts
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,900);
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&subset=latin-ext');
 
 // Mixin for include fonts
 // @include font-face("ArialMT", fonts/CenturyGothic, normal, normal);
@@ -17,17 +17,207 @@
 @import 'variables/variables';
 @import 'core/reset';
 @import 'core/template';
-@import 'core/header';
-@import 'core/footer';
+// @import 'core/header';
+// @import 'core/footer';
 @import 'core/form';
-@import 'core/grid';
-@import 'core/soc';
-@import 'core/breadcrumb';
-@import 'core/pagination';
+// @import 'core/grid';
+// @import 'core/soc';
+// @import 'core/breadcrumb';
+// @import 'core/pagination';
 @import 'core/buttons';
-@import 'core/video';
+// @import 'core/video';
 
 
+.logo {
+	display: inline-block;
+	margin-bottom: 46px;
+	@media (max-width: 1199px) {
+	    width: 160px;
+	    margin-bottom: 44px;
+	}
+	@media (max-width: 991px) {
+	    margin-bottom: 33px;
+	}
+	@media (max-width: 767px) {
+	    width: 150px;
+	}
+}
 
+.icon {
+	&_pdf {
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 10px;
+		&:before {
+			content: url('../img/PDF.png');
+		}
+	}
+}
+
+.firstScreen {
+	background: url('../img/BG.jpg') no-repeat left center;
+	background-size: 127% auto;
+	padding: 30px 0;
+	display: table;
+	width: 100%;
+	&__content {
+		display: table-cell;
+		// vertical-align: top;
+		// padding-top: 136px;
+		vertical-align: middle;
+	}
+	&__wrap {
+		max-width: 715px;
+	}
+	&__title {
+		margin: 0;
+		font-size: 64px;
+		margin-bottom: 19px;
+	}
+	&__sub {
+		margin: 0;
+		font-size: 28px;
+		font-weight: 500;
+		margin-bottom: 68px;
+	}
+	&__action {
+
+	}
+	@media (max-width: 1199px) {
+		background-size: 133% auto;
+	    &__title {
+	    	font-size: 44px;
+	    	margin-bottom: 15px;
+	    }
+	    &__wrap {
+	    	max-width: 508px;
+	    }
+	    &__sub {
+	    	font-size: 19px;
+	    	margin-bottom: 50px;
+	    }
+	}
+	@media (max-width: 991px) {
+	    background-image: url(../img/bg-sm.jpg);
+	    background-size: cover;
+	    background-position: bottom center;
+	    padding-bottom: 78%;
+	    &__content {
+	    	text-align: center;
+	    	vertical-align: top;
+	    }
+	    &__wrap {
+	    	padding-top: 41px;
+			max-width: 507px;
+			display: inline-block;
+			text-align: left;
+	    }
+	    &__sub {
+	    	margin-bottom: 54px;
+	    }
+	}
+	@media (max-width: 767px) {
+		background-image: url(../img/bg-xs.jpg);
+		background-position: center bottom;
+		background-size: cover;
+		padding-bottom: 76%;
+		padding-top: 0;
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			background: url(../img/Glasses.png) no-repeat center center;
+			background-size: 100%;
+			width: 90%;
+			left: 5%;
+			bottom: 3%;
+			padding-bottom: 50%;
+			z-index: 2;
+		}
+		&__wrap {
+			padding-top: 28px;
+		}
+	    &__title {
+	    	font-size: 38px;
+	    }
+	    &__sub {
+			font-size: 18px;
+			margin-bottom: 30px;
+			br {
+				display: none;
+			}
+	    }
+	}
+}
+
+.form {
+	&__content {
+		background-color: rgba(255, 255, 255, 0.55);
+		padding: 39px 42px 45px;
+		margin-bottom: 36px;
+	}
+	&__legend {
+		font-size: 27px;
+		font-weight: 500;
+		position: relative;
+		margin: 0 0 67px;
+		// margin-bottom: 67px;
+		b {
+			font-weight: 700;
+			display: block;
+		}
+		&:after {
+			content: '';
+			width: 46px;
+			height: 57px;
+			background: url('../img/form_arrow.svg') no-repeat center center;
+			background-size: 100%;
+			position: absolute;
+			display: block;
+			right: 5px;
+			bottom: -38px;
+		}
+	}
+	@media (max-width: 1199px) {
+		&__content {
+			padding: 33px 35px 31px;
+		}
+	    &__legend {
+	    	font-size: 20px;
+	    	margin-bottom: 52px;
+	    	b {
+	    		font-weight: 600;
+	    	}
+	    	&:after {
+	    		width: 35px;
+				height: 43px;
+				right: 3px;
+				bottom: -29px;
+	    	}
+	    }
+	}
+	@media (max-width: 991px) {
+		&__content {
+			padding: 31px 35px 31px;
+		}
+		&__legend {
+			margin-bottom: 53px;
+		}
+	}
+	@media (max-width: 767px) {
+		&__content {
+			padding: 22px 13px 14px;
+		}
+		&__legend {
+			margin-bottom: 32px;
+	    	&:after {
+	    		width: 24px;
+				height: 30px;
+				right: 6px;
+				bottom: -17px;
+	    	}
+		}
+	}
+}
 
 

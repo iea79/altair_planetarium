@@ -19,6 +19,12 @@
 	padding: 0 15px;
 	margin-left: auto;
 	margin-right: auto;
+	@media (max-width: 1199px) {
+	    padding: 0 45px;
+	}
+	@media (max-width: 767px) {
+	    padding: 0 11px;
+	}
 }
 
 .column {

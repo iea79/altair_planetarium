@@ -45,7 +45,7 @@ $(document).ready(function() {
 	// First screen full height
 	function setHeiHeight() {
 	    $('.full__height').css({
-	        minHeight: $(window).height() + 'px'
+	        height: $(window).height() + 'px'
 	    });
 	}
 	setHeiHeight(); // устанавливаем высоту окна при первой загрузке страницы
@@ -82,7 +82,7 @@ $(document).ready(function() {
     // Inputmask.js
     // $('[name=tel]').inputmask("+9(999)999 99 99",{ showMaskOnHover: false });
 
-   	gridMatch();
+   	// gridMatch();
 });
 
 $(window).resize(function(event) {
@@ -95,7 +95,7 @@ $(window).resize(function(event) {
 });
 
 function checkOnResize() {
-   	gridMatch();
+   	// gridMatch();
 }
 
 function gridMatch() {
