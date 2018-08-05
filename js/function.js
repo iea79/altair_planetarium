@@ -124,7 +124,7 @@ $(function () {
             $(this).css('background-image', 'url(http://i.ytimg.com/vi/' + this.id + '/sddefault.jpg)');
 
             // Добавляем иконку Play поверх миниатюры, чтобы было похоже на видеоплеер
-            $(this).append($('<img src="img/play.svg" alt="Play" class="video__play">'));
+            $(this).append($('<img src="img/YouTube.svg" alt="Play" class="video__play">'));
 
         });
 
@@ -138,8 +138,8 @@ $(function () {
             var iframe = $('<iframe/>', {
                 'frameborder': '0',
                 'src': iframe_url,
-                'width': $(this).width(),
-                'height': $(this).innerHeight()
+                // 'width': $(this).width(),
+                // 'height': $(this).innerHeight()
             })
 
             // Заменяем миниатюру HTML5 плеером с YouTube
