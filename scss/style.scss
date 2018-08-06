@@ -39,7 +39,9 @@
 	    margin-bottom: 33px;
 	}
 	@media (max-width: 767px) {
-	    width: 150px;
+	    width: 160px;
+	    padding-left: 10px;
+	    margin-bottom: 23px;
 	}
 }
 
@@ -120,31 +122,38 @@
 		background-image: url(../img/bg-xs.jpg);
 		background-position: center bottom;
 		background-size: cover;
-		padding-bottom: 76%;
+		padding-bottom: 30px;
 		padding-top: 0;
 		position: relative;
-		&:after {
-			content: '';
-			position: absolute;
-			background: url(../img/Glasses.png) no-repeat center center;
-			background-size: 100%;
-			width: 90%;
-			left: 5%;
-			bottom: 3%;
-			padding-bottom: 50%;
-			z-index: 2;
-		}
 		&__wrap {
 			padding-top: 28px;
 		}
 	    &__title {
 	    	font-size: 38px;
+	    	margin-bottom: 21px;
+	    	padding-left: 10px;
+	    	padding-right: 10px;
 	    }
 	    &__sub {
 			font-size: 18px;
-			margin-bottom: 30px;
+			margin-bottom: 0px;
+			position: relative;
+			padding-bottom: 64%;
+			padding-left: 10px;
+			padding-right: 10px;
 			br {
 				display: none;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				background: url(../img/Glasses.png) no-repeat center center;
+				background-size: 100%;
+				width: 104%;
+				left: -2%;
+				bottom: 3%;
+				padding-bottom: 52%;
+				z-index: 2;
 			}
 	    }
 	}
@@ -420,9 +429,10 @@
 	@media (max-width: 767px) {
 		&__content {
 			padding: 22px 13px 14px;
+			margin-bottom: 20px;
 		}
 		&__legend {
-			margin-bottom: 32px;
+			margin-bottom: 22px;
 	    	&:after {
 	    		width: 24px;
 				height: 30px;

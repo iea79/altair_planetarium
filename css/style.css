@@ -868,7 +868,9 @@ input[type=checkbox] {
       margin-bottom: 33px; } }
   @media (max-width: 767px) {
     .logo {
-      width: 150px; } }
+      width: 160px;
+      padding-left: 10px;
+      margin-bottom: 23px; } }
 
 .icon_pdf {
   display: inline-block;
@@ -929,28 +931,35 @@ input[type=checkbox] {
       background-image: url(../img/bg-xs.jpg);
       background-position: center bottom;
       background-size: cover;
-      padding-bottom: 76%;
+      padding-bottom: 30px;
       padding-top: 0;
       position: relative; }
-      .firstScreen:after {
-        content: '';
-        position: absolute;
-        background: url(../img/Glasses.png) no-repeat center center;
-        background-size: 100%;
-        width: 90%;
-        left: 5%;
-        bottom: 3%;
-        padding-bottom: 50%;
-        z-index: 2; }
       .firstScreen__wrap {
         padding-top: 28px; }
       .firstScreen__title {
-        font-size: 38px; }
+        font-size: 38px;
+        margin-bottom: 21px;
+        padding-left: 10px;
+        padding-right: 10px; }
       .firstScreen__sub {
         font-size: 18px;
-        margin-bottom: 30px; }
+        margin-bottom: 0px;
+        position: relative;
+        padding-bottom: 64%;
+        padding-left: 10px;
+        padding-right: 10px; }
         .firstScreen__sub br {
-          display: none; } }
+          display: none; }
+        .firstScreen__sub:after {
+          content: '';
+          position: absolute;
+          background: url(../img/Glasses.png) no-repeat center center;
+          background-size: 100%;
+          width: 104%;
+          left: -2%;
+          bottom: 3%;
+          padding-bottom: 52%;
+          z-index: 2; } }
 
 .thankyou {
   background: url("../img/BG-2.jpg") no-repeat top center;
@@ -1153,9 +1162,10 @@ input[type=checkbox] {
 
 @media (max-width: 767px) {
   .form__content {
-    padding: 22px 13px 14px; }
+    padding: 22px 13px 14px;
+    margin-bottom: 20px; }
   .form__legend {
-    margin-bottom: 32px; }
+    margin-bottom: 22px; }
     .form__legend:after {
       width: 24px;
       height: 30px;
